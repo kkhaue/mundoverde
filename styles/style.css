@@ -7,14 +7,35 @@
     list-style: none;
     }
     /* Cores personalizadas */
-    .green{
-        color:  #2ecc71;
+    .green {
+        color: #2ecc71; /* Verde claro que contrasta bem com branco */
+        transition: text-shadow 0.3s ease, color 0.3s ease, transform 0.3s ease;
     }
-    .orange{
+
+    .green:hover {
+        color: #27ae60; /* Verde mais escuro para o hover */
+        text-shadow: 0 0 2px #27ae60, 0 0 4px #27ae60;
+        transform: translateY(-5px);
+    }
+    .orange {
         color: #d35400;
+        transition: text-shadow 0.3s ease, color 0.3s ease, transform 0.3s ease;
     }
-    .blue{
+
+    .orange:hover {
+        color: #e67e22;
+        text-shadow: 0 0 2px #d35400, 0 0 4px #d35400;
+        transform: translateY(-5px);
+    }
+    .blue {
         color: #3498db;
+        transition: text-shadow 0.3s ease, color 0.3s ease, transform 0.3s ease;
+    }
+
+    .blue:hover {
+        color: #2980b9;
+        text-shadow: 0 0 2px #3498db, 0 0 4px #3498db;
+        transform: translateY(-5px);
     }
     html {
     scroll-behavior: smooth;
@@ -79,7 +100,7 @@
     height: 100vh;
     width: 100%;
     position: relative;
-    background: url("https://wallpaperaccess.com/full/6144302.jpg");
+    background: url("../img/fundobranco.jpg");
     background-position: center 65%;
     background-size: cover;
     background-attachment: fixed;
@@ -91,7 +112,7 @@
         top: 0;
         height: 100%;
         width: 100%;
-        background-color: black;
+
         opacity: 0.4;
     }
     .homepage::before {
@@ -101,7 +122,7 @@
     top: 0;
     height: 100%;
     width: 100%;
-    background: rgba(0, 0, 0, 0.2);
+
     }
     .homepage .content {
     display: flex;
