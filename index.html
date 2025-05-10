@@ -1,24 +1,26 @@
 <!DOCTYPE html>
 <!-- Coding By CodingNepal - www.codingnepalweb.com -->
 <html lang="pt-BR">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Mundo Verde</title>
-        <link rel="stylesheet" href="./styles/style.css">
-        <!-- Fontawesome Link for Icons -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
-    </head>
-    <body>
-        <header>
-            <nav class="navbar">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mundo Verde</title>
+    <link rel="stylesheet" href="./styles/style.css">
+    <!-- Fontawesome Link for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
             <img src="./img/mundo_verde_logo.png" alt="Logo do Mundo Verde">
             <!-- <h2 class="logo"><a href="#">LOGO</a></h2> -->
             <input type="checkbox" id="menu-toggler">
             <label for="menu-toggler" id="hamburger-btn">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" width="24px" height="24px">
-                <path d="M0 0h24v24H0z" fill="none"/>
-                <path d="M3 18h18v-2H3v2zm0-5h18V11H3v2zm0-7v2h18V6H3z"/>
+                    <path d="M0 0h24v24H0z" fill="none" />
+                    <path d="M3 18h18v-2H3v2zm0-5h18V11H3v2zm0-7v2h18V6H3z" />
                 </svg>
             </label>
             <ul class="all-links">
@@ -28,301 +30,542 @@
                 <li><a href="#solucoes-sustentaveis">Soluções Sustentáveis</a></li>
                 <li><a href="#contato">Contato</a></li>
             </ul>
-            </nav>
-        </header>
-        <!-- INÍCIO DA PÁGINA INICIAL -->
-        <section class="homepage" id="home">
-            <div class="content">
+        </nav>
+    </header>
+    <!-- INÍCIO DA PÁGINA INICIAL -->
+    <section class="homepage" id="home">
+        <div class="content">
             <div class="text">
                 <h1 style="color: black; font-weight: bold;">
-                    <span class="green">Lixo Eletrônico</span>, <span class="orange">Impacto Ambiental</span> e <span class="blue">Soluções Sustentáveis</span>
+                    <span class="green">Lixo Eletrônico</span>, <span class="orange">Impacto Ambiental</span> e <span
+                        class="blue">Soluções Sustentáveis</span>
                 </h1>
                 <p style="color: black; font-weight: bold;">
-                    Mundo Verde
+                <div class="container-fluid text-center">
+
+                    <svg id="svg-earth" data-name="svg-earth"
+                        alt="Drawing animation of earth with leaves sprouting from top"
+                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 582 197">
+                        <!-- Blobs -->
+                        <path class="blob1" d="M179,114.6c2.3-9.4,0.9-19.4-5.9-27.7c-6.4-7.8-18.2-14.4-29.7-16.2c-6.8-1.1-13.5-0.4-18.9,2.6
+	c-7.3,0.4-12.1,3.7-14.9,8.6c-5.9,3.7-10.4,9.1-12,16.2c-2.1,9.1,0.5,21.6,6.8,31.3c4.4,6.7,10.5,11.9,18.1,13.8
+	c0.8,0.2,1.6,0.4,2.4,0.5c9.6,3.7,21,2.7,29.9-0.8c6.1-2.4,11.6-6.6,15.8-11.9c3.3-3.5,5.9-7.7,7.4-12.6
+	C178.5,117.1,178.8,115.8,179,114.6z" />
+                        <path class="blob2" d="M143.4,70.8c-7.9-1.2-15.7-0.2-21.4,4.3c-16.4,13-23.9,39.3-9.8,58.9c10,13.9,29.1,14.2,42.7,8.9
+	c20.4-8,34-36.8,18.2-56C166.7,79.1,154.9,72.6,143.4,70.8z" />
+                        <path class="blob3" d="M144.7,72.5c-9.8-1.9-27.3,7.5-33.3,13.2c-7.6,7.2-10.6,17.9-8,28.9c5.8,24.6,30.3,28.1,50.3,22.1
+	C183,128,181.5,79.7,144.7,72.5z" />
+                        <path class="blob4" d="M104.4,129.4c4.4,6.7,10.5,11.9,18.1,13.8c22,5.3,48.9-3.4,55.6-24.8c4.7-15.1-8-29.8-21.6-37.1
+	c-20.5-11.1-53.8-5.5-58.9,16.8C95.5,107.2,98.1,119.8,104.4,129.4z" />
+                        <path class="blob5"
+                            d="M127.8,73.4c-28.5-1.7-24,35.6-12.6,51.3c13,17.9,31.3,25.3,49.2,10.8C189.6,115.1,158.9,75.2,127.8,73.4z" />
+
+                        <!-- Earth Fill -->
+                        <path class="path-earth" d="M154.7,82.2c-0.2-0.2-0.9-0.2-1.4-0.2c-0.4,0-0.6,0-0.6,0c-0.2,0-2.7-0.4-6.3,0c-0.2,0,0,0.2-0.3,0.3
+	c-0.5,0.2-1.4-0.1-1.9-0.1c-0.3,0,0.1-0.4-0.7-0.3c-1.6,0.1-4,0-5.7,0.2c-0.3,0-0.3,0.3-0.1,0.4c0.9,0.5-1.2-0.5-1.9,0.1
+	c-0.7,0.6,0.9,0.3,1.3,0.8c0.3,0.4-1.5,0.2-2,0.2c-0.6,0,2.4,1.2,1.8,1.3c-1,0.1-1.5-0.3-2.6-0.2c-0.4,0,0.3,1.5-0.1,1.5
+	c-0.7,0-1-1.5-1.5-1.2c-0.4,0.3-0.9,0.2-0.9,0.4c-0.1,0.3,0.4,0.7,0.2,0.7c-0.4,0-0.5,0.4-0.9,0.4c-1.5,0-3.2,0.2-4.7,0
+	c-0.1,0,0.6-0.7-0.2-0.6c-0.4,0.1-0.9,0.1-1.3,0.1c-0.3,0-0.1-0.3-0.2-0.4c-0.1-0.1-0.7,0.2-0.8,0.1c-0.1-0.2,0-0.3-0.3-0.4
+	c-0.8-0.1-3,0.6-3.7,0.5c-2-0.2-3.4-0.5-3.5-0.6c0,0-4.6,1.6-7.4,4c-0.4,0.3,0.5,0.2,0.4,0.5s-0.8,0.4-0.9,0.5
+	c-0.2,0.1-1.8,0.2-2.2,0.4c0,0-0.1,0.1-0.1,0.1c0,0.1-0.1,0.1-0.1,0.2c-0.1,0.2,0,0.4,0.3,0.5c0.5,0.1,1.2-0.2,1.6-0.3
+	c0,0,2.4-0.8,2.8-0.8c1.8-0.4,0.9-1.1,2-1.5c1.4-0.5-1.7,1.9,0.9,0.6c1.2-0.6,2-0.3,2.1-0.1c0.1,0.2-0.1,0.4,0.3,0.5
+	c0.6,0.2,0,1.1-0.1,1.4s0.8-0.1,0.6,0.2c-0.2,0.3-0.1,0.4,0.1,0.9s-0.4,0-0.5,0.4s1,0.4,1.2,0.6s-0.8,0.3-0.9,0.6
+	c-0.1,0.4-0.5,1.1-0.8,1.5c-0.2,0.3-1,1.7-1,1.7c-0.1,0.4-0.3,0.6-0.2,1.1c0,0.2,0.2,0.7,0.2,0.9c0.1,0.1,0.6,0.4,0.7,0.6
+	c0.1,0.2-0.5,0.7,0,1.3c0.5,0.6,0.3,0.7,0.3,1s0.5,0.5,0.6,0.7c0.1,0.2-0.1,0.7,0.2,1.1c0.2,0.4,0.7,0.3,0.8,0.1
+	c0.1-0.2-0.3-0.6-0.4-1.4c-0.1-0.8-0.7-1.4-0.7-1.7c0-0.2,0.6-0.2,0.6,0c0,0.1,0.6,2,1.1,2.6s0.6,1.2,0.6,1.3s-0.2,0-0.2,0.1
+	c-0.2,0.3,0.4,0.7,0.4,0.7c0.1,0.1,0.7,0.5,0.7,0.5c0.1,0.1,0.6,0.5,0.8,0.6c0.3,0.3,2.2,0.3,2.2,0.3c0.5,0.5,0.8,0.8,1.3,1
+	c0.3,0.1,0.7,0.2,1,0.4c0.5,0.3,0.2,0.7,0.2,0.9s0.3,0.3,0.6,0.4l0.4,0.4c0.4,0.4,1.1,0.5,1.2,0.2c0.1-0.2-0.4-0.3-0.2-0.5
+	s0.8,0.2,1,0.9s-0.3,1.3-0.4,1.5c0,0-0.6,0.7-0.8,1.1s-0.4,0.8-0.5,1.2s0.3,1.1,0.7,1.6c0.4,0.5,0.9,1.4,0.9,1.5
+	c0.1,0.1,0.2,0.8,0.3,0.9c0,0,0.1,0.5,0.3,0.7c0.2,0.2,1.3,0.6,1.3,0.6c0.6,0.3,0.9,0.9,1.2,1.3c0.3,0.5,0.1,1.9,0.1,2.6
+	c0,0,0.1,1.7,0.1,1.8c0.1,0.3,0.2,0.8,0.2,1.2c0,0.4-0.3,1.3-0.4,1.5c-0.2,1.1,0.5,2.1,1.3,2c0,0.2,0.1,0.6-0.2,1.4s1.3,2.8,2.8,3.2
+	c0,0-0.1,0.3,0.1,0.5c0.2,0.1,1.6,0.4,1.8-0.1s-0.3-0.6-0.8-0.8c-0.2-0.1-1.1-0.7-1.1-0.7c0-0.1,0.1-0.5,0.1-0.6
+	c0.1-0.3,0.3-0.3,0.2-0.7c-0.1-0.3-0.6-0.5-0.6-0.8s0.5-1,0.6-1.2c0.1-0.2-0.6-0.6-0.5-0.8s0.5,0.3,0.7,0.2c0.2-0.1-0.1-0.5,0.1-0.7
+	c0.2-0.2,1.1-0.1,1.3-0.5c0.2-0.4-0.4-0.8-0.3-1.3c0.1-0.3,0.9-0.1,1.3-0.2c0.4-0.2,1.1-1.8,1.4-2.1c0.5-0.7-0.2-0.7-0.2-1.3
+	s1.5-0.9,1.8-1.1c0.2-0.1,1-0.4,1.3-2c0,0,0.2-1.6,0.4-1.8c0.1-0.2,1.1-1.7,1.1-2c0,0-0.2-1-0.3-1.1s-0.5-0.3-0.8-0.5
+	s0.1-0.2-0.2-0.5s-2.3-0.4-2.5-0.7c-0.4-0.4-0.7-0.6-1.1-0.4c0,0-0.2,0.4-0.5,0.4s-0.8-0.3-0.8-0.6c0-0.3,0.6-0.5,0.2-1.2
+	c-0.1-0.3-0.3-1.2-2-1.6c-0.7-0.2-1.3-1.1-1.5-1.2c-0.3-0.1-0.4,0.2-0.6-0.3c-0.1-0.3-0.3-0.3-0.6-0.2c-0.3,0.1-0.7,0.2-0.8,0.2
+	c-0.2,0-0.6-0.3-0.9-0.4c-0.4-0.2-0.8,0-0.8,0c-0.2-0.3-0.1-0.3-0.3-0.2c-0.2,0.1-0.3,0.1-0.5,0.2c-0.6,0.1-1.1,0.3-1.6,0.6
+	l-0.2,0.1c-0.1,0-0.2,0-0.3,0c-0.2,0-0.9,0.1-1,0.1c0-0.2-0.5-0.6-0.5-0.7c0,0,0.2-0.6,0.2-1s-0.3-0.6-0.3-0.6
+	c-0.4-0.2-1.2-0.3-1.6-0.3c0.3-0.4,1.2-1.6,0.9-2c-0.2-0.3-0.7-0.2-1.1,0.1l-0.3,0.2c-0.1,0.1-0.2,0.2-0.3,0.3
+	c-0.2,0.1-0.4,0.2-0.7,0.2c-0.2,0-0.7,0.1-0.8,0.1c-0.1-0.1-0.5-0.7-0.6-0.9c0,0,0.6-2.3,0.7-2.4c0.1-0.1,1.2-0.8,1.5-0.9
+	c0.3-0.1,0.5,0.2,0.9,0.3c0.8,0.1,0.8-0.7,1.1-0.5c0.3,0.2,0.2,0.3,0.5,0.3c0.3,0,0.7-0.2,0.9,0c0.2,0.2,0.2,0.7,0.2,0.9
+	s-0.3,1,0.4,1.1c0,0-0.2,0.4-0.2,0.4s-0.5-0.3-0.7-0.1l-0.2,0.1c-0.2,0-0.5,0.3-0.6,0.4s0.1,0.3,0.3,0.4c0.3,0.1,0.3-0.2,0.5-0.2
+	c0.2,0,1,0.3,1.3,0.5c0,0,0.1,0.2,0.2,0.4c0.1,0.2,0.2,0.4,0.1,0.4c-0.1,0-0.3,0.2-0.2,0.5c0.1,0.3,0.9,0.3,0.7-0.2
+	c-0.1-0.2-0.5-0.5-0.3-0.6s0.9,0,1,0.2c0.1,0.2-0.2,0.7,0.1,0.7c0.2,0,0.6-0.1,0.8-0.1c0.2,0.1,0.5,0,0.5,0c0.2,0,0.3,0.1,0.5,0
+	c0.1,0,0.3-0.1,0.3-0.2c0,0,1.1,0.7,1.1,0.1s-1-0.1-1.1-0.2c0,0-0.2-0.4-0.4-0.5c-0.2-0.1-0.7-0.1-0.9-0.1c-0.8-0.1-0.3,0.8-0.7,0.4
+	c-0.5-0.4,0-0.4,0.1-0.6c0-0.2-0.7-0.4-1-0.6c-0.3-0.2-1.1-0.5-1.5-0.6l0.3-0.4c0.1,0,0.3-0.1,0.3-0.1c0.3-0.2,0-1.6,0.1-2.2
+	s0.8-1.1,1.2-1.3s1.6-1,1.9-1.9c0.1-0.3,0.8-0.5,1.2-0.6c0.6-0.2,1.3-1,0.9-1.3s1.6-0.9,1.8-1c0.2-0.1-0.3,0.7-0.2,0.8l1.5-0.5
+	c0.2-0.1,0.8-0.1,0.6-0.5c-0.1-0.4-1.2,0-1.3-0.3c-0.1-0.3,0.5-0.7,0.4-0.9c-0.1-0.2-1.8,0.6-1.9,0.2c-0.2-0.9,2.8-0.5,2.8-0.5
+	c0.1,0,0.6-0.4,1-0.4c0.5,0-0.7,0.8-0.7,1c-0.1,0.2,0.2,0.4,0.4,0.4c0.2,0,0.7-0.1,0.7-0.1c0,0.1-0.2,0.3,0,0.4
+	c0.2,0.1,0.2,0,0.4-0.1c0.1,0,0.5,0.3,0.8,0c0.3-0.4-0.1-0.8-0.1-0.8s0.4-0.5-0.5-0.5c0-0.1,0.1-0.6,0.1-0.7
+	c0.1-0.1,0.3-0.1,0.4-0.2c0,0,0-0.3-0.4-0.7c-0.1-0.2,0.1-0.3-0.1-0.5s-0.9-0.3-1-0.5s0.4-0.1,0.6-0.1c0.2-0.1-0.3-1-0.6-1.1
+	s-1.8,0.6-1.3,0c0.5-0.6-0.1-0.6-1-1c-1.1-0.5-1,0.5-1.5,0.8c-0.4,0.3-0.9,0.2-0.6,0.6c0.2,0.3,0.1,1.3-0.6,1.4
+	c-0.7,0-0.8,1.3-1.2,1.4c-1.4,0.3,0.1-1-0.3-1.4s-2.5-0.1-2.3-1.4c0.1-1.3,3.8-2,3.8-2c0.2,0-0.1-1,0.7-0.6s0.9-0.5,1.7-0.8
+	c0.7-0.3,1.2-0.4,1.6-0.1c0.3,0.3,0.2,1-0.3,1.1c-0.7,0.1-2.1,0.2-1.4,0.5c1,0.3,1.6,0.7,2,0.8c0.4,0.1,0.7,0.3,1.5-0.1
+	c0.7-0.4-0.2-1.2-0.2-1.2c0,0,0.5,0.3,1,0.3c0.5,0,1-0.4,0.9-0.6s-2.3-0.5-1.5-0.7c0.8-0.2,0.7-0.4-0.5-1.1
+	c-0.3-0.1-0.9-0.6-0.9-0.6c0-0.1,0.6-0.2,0.1-0.5c-0.5-0.4,1.1-0.1,1.3-0.3c0.2-0.2,1-0.8,1.3-0.6s-0.2,0.6,0.2,0.9
+	c0.4,0.4,1,0.3,1.4,0.3c0.2,0,0.5,0,0.7,0c0.9,0.1,0.4,0.6,0.3,0.8s0.6,0.4,0.8,0.5l-0.2,0.6c-0.5,0.1-0.8,0-1,0.5
+	c-0.2,0.4-0.3,0.7-0.2,1c0.1,0.8,0.4,1.1,1.1,1.3c0,0,0.6,0.5,0.9,0.4c0,0,0.9-0.7,1.2-1c0.2-0.2,1-1,1.3-1.2
+	c0.2-0.1,3.3-0.4,3.8-0.4c0,0.2-0.1,0.6,0,0.8c0.2,0.5,1.3,0.8,1.9,0.6c0.6-0.2,1.1-1.3,0.2-1.2c-0.2,0.1-0.7,0.1-0.9,0.1
+	c-0.5-0.2-1.2-0.4-1.2-0.4c0.2-0.2,1.1-0.9,0.8-1.1c-0.3-0.3,0.5,0,0.3-0.7s0.5-0.1,0.8-0.4c0.2-0.2-0.1-1,0.5-1
+	c0.6,0-1.1-0.6-0.3-0.6c0.5,0,1.3,0,1.5,0c0.1,0,0.2,0,0.3-0.1C154.7,82.7,155,82.4,154.7,82.2z" />
+
+                        <!-- Main Line -->
+                        <path class="path path-long" d="M1.4,107.6c0,0,18.1-9.1,33.2-8.8s25.9,3,38.1,2.7c14.9-0.4,23-6.8,27.8-8.6c1-0.4,29.4-15.3,37.4-17.2
+	c5.3-1.3,13.2-0.6,19.8,1.7c19.7,6.8,24.9,45.7-1.5,60.7c-14.3,8.1-34.4,2.1-45.1-6.6c-4.5-3.6-5.8-4.7-7.9-9
+	c-6.9-14.5-1.8-29,7.3-36.4s17.3-10.2,26.7-9.5c4.8,0.4,7.9-0.5,21.1,7.3c13.7,8,18.7,28.7,4.5,45.2c-13.6,15.8-31.2,15.8-40.6,13
+	c-13.8-4.1-24.1-19-24.1-33.2c0-15.5,6-22.7,11.7-27.4c7.5-6.2,13.9-6.9,20.3-7.5c14.1-1.2,25.8,9.2,30.3,15.1
+	c15.3,20.2,0.9,38.6-7.7,46.3c-10.7,9.6-46.1,9.1-49.8-20.8c-1.9-15.2,1.4-22.1,5-25.3c0.3-0.3,1.1,0,1.3,0.2s0.5,0.2,0.4,0.5
+	s-0.8,0.4-0.9,0.5c-0.2,0.1-1.8,0.2-2.2,0.4s-0.4,0.7,0.1,0.7s1.2-0.2,1.6-0.3c0,0,2.4-0.8,2.8-0.8c1.8-0.4,0.9-1.1,2-1.5
+	c1.4-0.5-1.7,1.9,0.9,0.6c1.2-0.6,2-0.3,2.1-0.1c0.1,0.2-0.1,0.4,0.3,0.5c0.6,0.2,0,1.1-0.1,1.4s0.8-0.1,0.6,0.2
+	c-0.2,0.3-0.1,0.4,0.1,0.9c0.2,0.5-0.4,0-0.5,0.4s1,0.4,1.2,0.6c0.2,0.2-0.8,0.3-0.9,0.6c-0.1,0.4-0.5,1.1-0.8,1.5
+	c-0.2,0.3-1,1.7-1,1.7c-0.1,0.4-0.3,0.6-0.2,1.1c0,0.2,0.2,0.7,0.2,0.9c0.1,0.1,0.6,0.4,0.7,0.6c0.1,0.2-0.5,0.7,0,1.3
+	c0.5,0.6,0.3,0.7,0.3,1s0.5,0.5,0.6,0.7c0.1,0.2-0.1,0.7,0.2,1.1c0.2,0.4,0.7,0.3,0.8,0.1c0.1-0.2-0.3-0.6-0.4-1.4
+	c-0.1-0.8-0.7-1.4-0.7-1.7c0-0.2,0.6-0.2,0.6,0c0,0.1,0.6,2,1.1,2.6c0.5,0.6,0.6,1.2,0.6,1.3c0,0.1-0.2,0-0.2,0.1
+	c-0.2,0.3,0.4,0.7,0.4,0.7c0.1,0.1,0.7,0.5,0.7,0.5c0.1,0.1,0.6,0.5,0.8,0.6c0.3,0.3,2.2,0.3,2.2,0.3c0.5,0.5,0.8,0.8,1.3,1
+	c0.3,0.1,0.7,0.2,1,0.4c0.5,0.3,0.2,0.7,0.2,0.9c0,0.2,0.3,0.3,0.6,0.4l0.4,0.4c0.4,0.4,1.1,0.5,1.2,0.2c0.1-0.2-0.4-0.3-0.2-0.5
+	s0.8,0.2,1,0.9s-0.3,1.3-0.4,1.5c0,0-0.6,0.7-0.8,1.1s-0.4,0.8-0.5,1.2s0.3,1.1,0.7,1.6s0.9,1.4,0.9,1.5c0.1,0.1,0.2,0.8,0.3,0.9
+	c0,0,0.1,0.5,0.3,0.7c0.2,0.2,1.3,0.6,1.3,0.6c0.6,0.3,0.9,0.9,1.2,1.3c0.3,0.5,0.1,1.9,0.1,2.6c0,0,0.1,1.7,0.1,1.8
+	c0.1,0.3,0.2,0.8,0.2,1.2s-0.3,1.3-0.4,1.5c-0.2,1.1,0.5,2.1,1.3,2c0,0.2,0.1,0.6-0.2,1.4s1.3,2.8,2.8,3.2c0,0-0.1,0.3,0.1,0.5
+	s1.6,0.4,1.8-0.1s-0.3-0.6-0.8-0.8c-0.2-0.1-1.1-0.7-1.1-0.7c0-0.1,0.1-0.5,0.1-0.6c0.1-0.3,0.3-0.3,0.2-0.7
+	c-0.1-0.3-0.6-0.5-0.6-0.8s0.5-1,0.6-1.2c0.1-0.2-0.6-0.6-0.5-0.8s0.5,0.3,0.7,0.2s-0.1-0.5,0.1-0.7s1.1-0.1,1.3-0.5
+	c0.2-0.4-0.4-0.8-0.3-1.3c0.1-0.3,0.9-0.1,1.3-0.2s1.1-1.8,1.4-2.1c0.5-0.7-0.2-0.7-0.2-1.3s1.5-0.9,1.8-1.1c0.2-0.1,1-0.4,1.3-2
+	c0,0,0.2-1.6,0.4-1.8c0.1-0.2,1.1-1.7,1.1-2c0,0-0.2-1-0.3-1.1s-0.5-0.3-0.8-0.5s0.1-0.2-0.2-0.5s-2.3-0.4-2.5-0.7
+	c-0.4-0.4-0.7-0.6-1.1-0.4c0,0-0.2,0.4-0.5,0.4s-0.8-0.3-0.8-0.6c0-0.3,0.6-0.5,0.2-1.2c-0.1-0.3-0.3-1.2-2-1.6
+	c-0.7-0.2-1.3-1.1-1.5-1.2c-0.3-0.1-0.4,0.2-0.6-0.3c-0.1-0.3-0.3-0.3-0.6-0.2c-0.3,0.1-0.7,0.2-0.8,0.2c-0.2,0-0.6-0.3-0.9-0.4
+	c-0.4-0.2-0.8,0-0.8,0c-0.2-0.3-0.1-0.3-0.3-0.2c-0.2,0.1-0.3,0.1-0.5,0.2c-0.6,0.1-1.1,0.3-1.6,0.6l-0.2,0.1c-0.1,0-0.2,0-0.3,0
+	c-0.2,0-0.9,0.1-1,0.1c0-0.2-0.5-0.6-0.5-0.7c0,0,0.2-0.6,0.2-1s-0.3-0.6-0.3-0.6c-0.4-0.2-1.2-0.3-1.6-0.3c0.3-0.4,1.2-1.6,0.9-2
+	c-0.2-0.3-0.7-0.2-1.1,0.1l-0.3,0.2c-0.1,0.1-0.2,0.2-0.3,0.3c-0.2,0.1-0.4,0.2-0.7,0.2c-0.2,0-0.7,0.1-0.8,0.1
+	c-0.1-0.1-0.5-0.7-0.6-0.9c0,0,0.6-2.3,0.7-2.4c0.1-0.1,1.2-0.8,1.5-0.9c0.3-0.1,0.5,0.2,0.9,0.3c0.8,0.1,0.8-0.7,1.1-0.5
+	c0.3,0.2,0.2,0.3,0.5,0.3c0.3,0,0.7-0.2,0.9,0c0.2,0.2,0.2,0.7,0.2,0.9s-0.3,1,0.4,1.1c0,0-0.2,0.4-0.2,0.4s-0.5-0.3-0.7-0.1
+	l-0.2,0.1c-0.2,0-0.5,0.3-0.6,0.4s0.1,0.3,0.3,0.4c0.3,0.1,0.3-0.2,0.5-0.2s1,0.3,1.3,0.5c0,0,0.1,0.2,0.2,0.4
+	c0.1,0.2,0.2,0.4,0.1,0.4c-0.1,0-0.3,0.2-0.2,0.5c0.1,0.3,0.9,0.3,0.7-0.2c-0.1-0.2-0.5-0.5-0.3-0.6c0.2-0.1,0.9,0,1,0.2
+	c0.1,0.2-0.2,0.7,0.1,0.7c0.2,0,0.6-0.1,0.8-0.1c0.2,0.1,0.5,0,0.5,0c0.2,0,0.3,0.1,0.5,0c0.1,0,0.3-0.1,0.3-0.2
+	c0,0,1.1,0.7,1.1,0.1s-1-0.1-1.1-0.2c0,0-0.2-0.4-0.4-0.5c-0.2-0.1-0.7-0.1-0.9-0.1c-0.8-0.1-0.3,0.8-0.7,0.4
+	c-0.5-0.4,0-0.4,0.1-0.6c0-0.2-0.7-0.4-1-0.6c-0.3-0.2-1.1-0.5-1.5-0.6l0.3-0.4c0.1,0,0.3-0.1,0.3-0.1c0.3-0.2,0-1.6,0.1-2.2
+	s0.8-1.1,1.2-1.3c0.4-0.2,1.6-1,1.9-1.9c0.1-0.3,0.8-0.5,1.2-0.6c0.6-0.2,1.3-1,0.9-1.3s1.6-0.9,1.8-1c0.2-0.1-0.3,0.7-0.2,0.8
+	l1.5-0.5c0.2-0.1,0.8-0.1,0.6-0.5c-0.1-0.4-1.2,0-1.3-0.3c-0.1-0.3,0.5-0.7,0.4-0.9s-1.8,0.6-1.9,0.2c-0.2-0.9,2.8-0.5,2.8-0.5
+	c0.1,0,0.6-0.4,1-0.4c0.5,0-0.7,0.8-0.7,1c-0.1,0.2,0.2,0.4,0.4,0.4c0.2,0,0.7-0.1,0.7-0.1c0,0.1-0.2,0.3,0,0.4
+	c0.2,0.1,0.2,0,0.4-0.1c0.1,0,0.5,0.3,0.8,0c0.3-0.4-0.1-0.8-0.1-0.8s0.4-0.5-0.5-0.5c0-0.1,0.1-0.6,0.1-0.7
+	c0.1-0.1,0.3-0.1,0.4-0.2c0,0,0-0.3-0.4-0.7c-0.1-0.2,0.1-0.3-0.1-0.5c-0.2-0.2-0.9-0.3-1-0.5c-0.1-0.3,0.4-0.1,0.6-0.1
+	s-0.3-1-0.6-1.1c-0.3-0.2-1.8,0.6-1.3,0c0.5-0.6-0.1-0.6-1-1c-1.1-0.5-1,0.5-1.5,0.8c-0.4,0.3-0.9,0.2-0.6,0.6
+	c0.2,0.3,0.1,1.3-0.6,1.4c-0.7,0-0.8,1.3-1.2,1.4c-1.4,0.3,0.1-1-0.3-1.4s-2.5-0.1-2.3-1.4c0.1-1.3,3.8-2,3.8-2c0.2,0-0.1-1,0.7-0.6
+	s0.9-0.5,1.7-0.8c0.7-0.3,1.2-0.4,1.6-0.1c0.3,0.3,0.2,1-0.3,1.1c-0.7,0.1-2.1,0.2-1.4,0.5c1,0.3,1.6,0.7,2,0.8
+	c0.4,0.1,0.7,0.3,1.5-0.1s-0.2-1.2-0.2-1.2c0,0,0.5,0.3,1,0.3c0.5,0,1-0.4,0.9-0.6s-2.3-0.5-1.5-0.7c0.8-0.2,0.7-0.4-0.5-1.1
+	c-0.3-0.1-0.9-0.6-0.9-0.6c0-0.1,0.6-0.2,0.1-0.5c-0.5-0.4,1.1-0.1,1.3-0.3c0.2-0.2,1-0.8,1.3-0.6c0.3,0.2-0.2,0.6,0.2,0.9
+	c0.4,0.4,1,0.3,1.4,0.3c0.2,0,0.5,0,0.7,0c0.9,0.1,0.4,0.6,0.3,0.8s0.6,0.4,0.8,0.5l-0.2,0.6c-0.5,0.1-0.8,0-1,0.5
+	c-0.2,0.4-0.3,0.7-0.2,1c0.1,0.8,0.4,1.1,1.1,1.3c0,0,0.6,0.5,0.9,0.4c0,0,0.9-0.7,1.2-1c0.2-0.2,1-1,1.3-1.2
+	c0.2-0.1,3.3-0.4,3.8-0.4c0,0.2-0.1,0.6,0,0.8c0.2,0.5,1.3,0.8,1.9,0.6c0.6-0.2,1.1-1.3,0.2-1.2c-0.2,0.1-0.7,0.1-0.9,0.1
+	c-0.5-0.2-1.2-0.4-1.2-0.4c0.2-0.2,1.1-0.9,0.8-1.1c-0.3-0.3,0.5,0,0.3-0.7c-0.2-0.7,0.5-0.1,0.8-0.4c0.2-0.2-0.1-1,0.5-1
+	c0.6,0-1.1-0.6-0.3-0.6c0.5,0,1.3,0,1.5,0c0.5,0,1.1-0.5,0.7-0.8s-2.1-0.1-2.1-0.1c-0.2,0-2.7-0.4-6.3,0c-0.2,0,0,0.2-0.3,0.3
+	c-0.5,0.2-1.4-0.1-1.9-0.1c-0.3,0,0.1-0.4-0.7-0.3c-1.6,0.1-4,0-5.7,0.2c-0.3,0-0.3,0.3-0.1,0.4c0.9,0.5-1.2-0.5-1.9,0.1
+	c-0.7,0.6,0.9,0.3,1.3,0.8c0.3,0.4-1.5,0.2-2,0.2c-0.6,0,2.4,1.2,1.8,1.3c-1,0.1-1.5-0.3-2.6-0.2c-0.4,0,0.3,1.5-0.1,1.5
+	c-0.7,0-1-1.5-1.5-1.2c-0.4,0.3-0.9,0.2-0.9,0.4c-0.1,0.3,0.4,0.7,0.2,0.7c-0.4,0-0.5,0.4-0.9,0.4c-1.5,0-3.2,0.2-4.7,0
+	c-0.1,0,0.6-0.7-0.2-0.6c-0.4,0.1-0.9,0.1-1.3,0.1c-0.3,0-0.1-0.3-0.2-0.4c-0.1-0.1-0.7,0.2-0.8,0.1c-0.1-0.2,0-0.3-0.3-0.4
+	c-0.8-0.1-3,0.6-3.7,0.5c-2-0.2-3.4-0.5-3.5-0.6c-1.4-0.7,14.7-7.2,29-7.8c10.6-0.5,17.7,5,29.6,15.1s26.8,25.1,45.4,34.5
+	c19.8,10.1,40.5,12.7,53.6,13.5c13,0.9,104.2-15.3,308-19.8" />
+
+
+                        <path class="path-leaf-1"
+                            d="M127.1,58.7c1-8.1-4-10.2-10.7-10.7C116.7,51.6,116.9,60,127.1,58.7L127.1,58.7z" />
+                        <path class="path-leaf-2"
+                            d="M133.7,51c6.5-5,4.4-10.1,0-15.1C131.4,38.6,125.6,44.7,133.7,51L133.7,51z" />
+                        <path class="path-leaf-3"
+                            d="M140,59c-1-8.1,4-10.2,10.7-10.7C150.4,51.9,150.2,60.3,140,59L140,59z" />
+
+
+                        <!-- Center Leaf -->
+                        <path class="path path-line-2" d="M133.7,50.9c6.4-5,4.3-10,0-15" />
+                        <path class="path path-line-2" d="M133.7,50.9c-6.4-5-4.3-10,0-15" />
+                        <path class="path path-line" d="M133.7,73.8c0-0.9,0-23.1,0-23.1" />
+                        <!-- Left Leaf -->
+                        <path class="path path-line-3" d="M127,58.7c1-8.1-4-10.1-10.6-10.6" />
+                        <path class="path path-line-3" d="M127,58.7c-8.1,1-10.1-4-10.6-10.6" />
+                        <path class="path path-line-2" d="M133.7,65.3c0,0-5.9-5.9-6.8-6.8" />
+
+                        <!-- Right Leaf -->
+                        <path class="path path-line-3" d="M140,59c8.1,1,10.1-4,10.6-10.6" />
+                        <path class="path path-line-3" d="M140,59c-1-8.1,4-10.1,10.6-10.6" />
+                        <path class="path path-line-2" d="M133.7,65.3c0,0,5.5-5.5,6.5-6.5" />
+
+
+
+                    </svg>
+                </div>
                 </p>
+
             </div>
+
+
             <a href="#lixo-eletronico">Começar Leitura</a>
-            </div>
-        </section>
-        <!-- FIM DA PÁGINA INICIAL -->
-        
-        <!-- INÍCIO DO CÓDIGO DO LIXO ELETRONICO  -->
-        <section class="lixo-eletronico" id="lixo-eletronico">
-            <h2>Lixo Eletrônico</h2>
-            <p>Apresentação de tópicos importantes sobre o assunto</p>
-            <ul class="cards">
-                <li class="card">
-                    <h3>Definição</h3>
-                    <p>Lixo eletrônico são aparelhos sem uso, como celulares e pilhas, que podem ser reciclados. Em vez de ir para o lixo comum, seus materiais viram novas matérias-primas, ajudando o meio ambiente.</p>
-                </li>
-                <li class="card">
-                    <h3>Falso Perigo</h3>
-                    <p>
-                        Aparelhos eletrônicos fora de uso não oferecem risco. Se eram seguros quando funcionavam, continuam sendo depois. É totalmente seguro guardar e transportar até o descarte correto.
-                    </p>
-                </li>
-                <li class="card">
-                    <h3>Resíduo VS Lixo</h3>
-                    <p>Chamamos de “lixo eletrônico” tudo o que não usamos mais, como celulares e cabos. Mas, na verdade, muitos desses itens ainda podem ser reciclados ou reaproveitados. O termo mais correto é resíduo eletrônico, pois mostra que eles ainda têm valor e podem ajudar o meio ambiente e a economia.</p>
-                </li>
-                <li class="card">
-                    <h3>Perigo Real (Desmontagem)</h3>
-                    <p>
-                        Não é recomendado desmontar seus aparelhos em casa, pois isso pode ser perigoso e dificultar a reciclagem. O desmonte deve ser feito por profissionais qualificados. Para baterias de lítio, como as de celulares, mantenha-as dentro do dispositivo ou embale-as de forma segura antes de descartar. Equipamentos maiores devem ser entregues inteiros aos pontos de coleta.
-                    </p>
-                </li>
-            </ul>
-        </section>
-        <section class="lixo-eletronico dados">
-            <h2>Notícias sobre Lixo Eletrônico</h2>
-            <ul class="cards">
-                <li class="card">
-                    <img src="https://assets.brasildefato.com.br/2024/12/image_processing20241220-2385620-ep6qkj.webp" alt="img">
-                    <h3>Brasil é 5º país que mais gera lixo eletrônico, mas só 3% é descartado corretamente</h3>
-                    <a target="_blank" href="https://www.brasildefato.com.br/2024/12/26/brasil-e-5-pais-que-mais-gera-lixo-eletronico-mas-so-3-e-descartado-corretamente-saiba-como-fazer/">Ler mais</a>
-                </li>
-                <li class="card">
-                    <img src="https://s2-g1.glbimg.com/rU-jgvLXffNeoHLvcraLrq0o_CM=/0x0:1700x917/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2022/Q/1/QdBODHTOqSOh7uGQvBdw/lixo-eletronico-pocos-de-caldas.png" alt="img">
-                    <h3>Contaminação por chumbo e mercúrio: veja riscos do descarte inadequado de celulares e eletrônicos</h3>
-                    <a target="_blank" href="https://g1.globo.com/pa/para/noticia/2023/11/30/contaminacao-por-chumbo-e-mercurio-saiba-quais-os-riscos-do-descarte-inadequado-de-celulares-e-eletronicos.ghtml">Ler mais</a>
-                </li>
-            </ul>
-        </section>
-        <!-- FIM DO CÓDIGO DO LIXO ELETRONICO  -->
-        
-        <!-- INÍCIO - IMPACTO AMBIENTAL -->
-        <section class="services" id="impacto-ambiental">
-            <h2>Impacto Ambiental</h2>
-            <p>Explore our wide range of camping gear services.</p>
-            <ul class="cards">
-            <li class="card">
-                <img src="images/tents.jpg" alt="img">
-                <h3>Tents</h3>
-                <p>Experience comfort and protection with our high-quality camping tents.</p>
-            </li>
-            <li class="card">
-                <img src="images/bags.jpg" alt="img">
-                <h3>Sleeping Bags</h3>
-                <p>Stay cozy and warm during your camping trips with our premium sleeping bags.</p>
-            </li>
-            <li class="card">
-                <img src="images/stoves.jpg" alt="img">
-                <h3>Camp Stoves</h3>
-                <p>Cook delicious meals in the great outdoors with our reliable camp stoves.</p>
-            </li>
-            <li class="card">
-                <img src="images/backpacks.jpg" alt="img">
-                <h3>Backpacks</h3>
-                <p>Carry your essentials comfortably with our durable and functional camping backpacks.</p>
-            </li>
-            <li class="card">
-                <img src="images/chair.jpg" alt="img">
-                <h3>Camp Chairs</h3>
-                <p>Relax and unwind in style with our comfortable and portable camping chairs.</p>
-            </li>
-            <li class="card">
-                <img src="images/light.jpg" alt="img">
-                <h3>Camp Lights</h3>
-                <p>Illuminate your campsite with our reliable and energy-efficient camping lights.</p>
-            </li>
-            </ul>
-        </section>
-        <!-- FIM IMPACTO AMBIENTAL -->
-        
-        <!-- INÍCIO SOLUÇÕES SUSTENTÁVEIS -->
-        <section class="solucoes-sustentaveis" id="solucoes-sustentaveis">
-            <h2>Soluções Sustentáveis</h2>
-            <ul class="cards">
-                <li class="card">
-                    <h3>Objetivo Principal</h3>
-                    <p>
-                        O desafio do lixo eletrônico exige uma abordagem sistêmica, integrando ações de governos, empresas, instituições de ensino e consumidores. Soluções sustentáveis vão além da reciclagem: elas buscam reestruturar a forma como produzimos, consumimos e descartamos tecnologia. A seguir, apresentamos um conjunto de estratégias interligadas para enfrentar esse problema de forma eficaz e duradoura:
-                    </p>
-                    <ul class="list">
-                        <li>
-                            1 - Design Sustentável e Ecoeficiente
-                        </li>
-                        <li>
-                            2 - Economia Circular
-                        </li>
-                        <li>
-                            3 - Logística Reversa
-                        </li>
-                        <li>
-                            4 - Educação Ambiental e Conscientização
-                        </li>
-                        <li>
-                            5 - Incentivo à Pesquisa e Inovação
-                        </li>
-                    </ul>
-                </li>
-                <li class="card image">
-                    <img src="./img/lixeira.jpeg" alt="Lixeira verde com eletroeletrônicos dentro">
-                </li>
-                <li class="card">
-                    <h3 class="tituloMenor">Design Sustentável e Ecoeficiente</h3>
-                    <p>
-                        Produtos modulares, com peças que podem ser trocadas, e o uso de materiais recicláveis ou biodegradáveis ajudam a reduzir o impacto ambiental. A Fairphone, por exemplo, fabrica celulares fáceis de consertar, promovendo mais durabilidade.
-                    </p>
-                    <h3 class="tituloMenor marginTop">Economia Circular</h3>
-                    <p>
-                        Na economia circular, o foco é reaproveitar. Em vez de simplesmente descartar, reutiliza-se aparelhos, recuperam-se metais valiosos e reintegram-se materiais reciclados nas cadeias produtivas. Isso diminui a extração de recursos e a geração de lixo.
-                    </p>
-                    <h3 class="tituloMenor marginTop">Logística Reversa</h3>
-                    <p>
-                        A logística reversa garante que os produtos usados voltem ao fabricante, que deve dar a eles um destino adequado. Isso inclui pontos de coleta, programas de troca e campanhas de recolhimento — medidas já previstas por lei no Brasil.
-                    </p>
-                </li>
-                <li class="card">
-                    <h3 class="tituloMenor">Educação Ambiental e Conscientização</h3>
-                    <p>
-                        Informar consumidores sobre o impacto do consumo e descarte faz toda a diferença. Reparar, reutilizar e comprar de forma consciente são atitudes que reduzem o lixo eletrônico.
-                    </p>
-                    <h3 class="tituloMenor marginTop">Incentivo à Pesquisa e Inovação</h3>
-                    <p>
-                        Investir em reciclagem eficiente, novos materiais e tecnologias de rastreamento torna todo o processo mais limpo e inteligente.
-                    </p>
+        </div>
+    </section>
+    <!-- FIM DA PÁGINA INICIAL -->
 
-                </li>
-            </ul>
-        </section>
-        <!-- FIM SOLUÇÕES SUSTENTÁVEIS -->
-        
-
-        <section class="about" id="about">
-            <h2>About Us</h2>
-            <p>Discover our story in providing camping services.</p>
-            <div class="row company-info">
-            <h3>Our Story</h3>
-            <p>Experience the excellence of our camping gear and services, where we have been offering high-quality camping essentials and gear for outdoor enthusiasts for over a decade. Our commitment to quality and customer satisfaction ensures that every adventurer can rely on us for their camping needs.</p>
-            </div>
-            <div class="row mission-vision">
-            <h3>Our Mission</h3>
-            <p>At Camping Gear Experts, our mission is to equip outdoor enthusiasts with top-notch camping gear and essentials that enhance their outdoor experiences. We strive to provide reliable, durable, and innovative products that contribute to memorable adventures and lasting memories.</p>
-            <h3>Our Vision</h3>
-            <p>Our vision is to become the go-to destination for camping enthusiasts, known for our extensive selection of premium camping gear and exceptional customer service. We aspire to inspire and enable people to embrace the beauty of nature and create unforgettable camping experiences.</p>
-            </div>
-            <div class="row team">
-            <h3>Our Team</h3>
-            <ul>
-                <li>John Doe - Founder and CEO</li>
-                <li>Jane Smith - Gear Specialist</li>
-                <li>Mark Johnson - Customer Representative</li>
-                <li>Sarah Brown - Operations Manager</li>
-            </ul>
-            </div>
-        </section>
-
-        <section class="contact" id="contact">
-            <h2>Contact Us</h2>
-            <p>Reach out to us for any inquiries or feedback.</p>
-            <div class="row">
-            <div class="col information">
-                <div class="contact-details">
-                <p><i class="fas fa-map-marker-alt"></i> 123 Campsite Avenue, Wilderness, CA 98765</p>
-                <p><i class="fas fa-envelope"></i> info@campinggearexperts.com</p>
-                <p><i class="fas fa-phone"></i> (123) 456-7890</p>
-                <p><i class="fas fa-clock"></i> Monday - Friday: 9:00 AM - 5:00 PM</p>
-                <p><i class="fas fa-clock"></i> Saturday: 10:00 AM - 3:00 PM</p>
-                <p><i class="fas fa-clock"></i> Sunday: Closed</p>
-                <p><i class="fas fa-globe"></i> www.codingnepalweb.com</p>
-                </div>          
-            </div>
-            <div class="col form">
-                <form>
-                <input type="text" placeholder="Name*" required>
-                <input type="email" placeholder="Email*" required>
-                <textarea placeholder="Message*" required></textarea>
-                <button id="submit" type="submit">Send Message</button>
-                </form>
-            </div>
-            </div>
-        </section>
-
-        <section class="contato" id="contato">
-            <h2>Developers</h2>
-            <ul class="cards">
-                <li class="card">
-                    <img src="https://www.shutterstock.com/image-vector/blank-avatar-photo-place-holder-600nw-1095249842.jpg" alt="img">
-                    <h3>Matheus Reichemback Stang</h3>
-                    <p>
-                        matheus.reichemback.stang@gmail.com
-                    </p>
-                    <ul>
-                        <li>
-                            <a href="" id="githubButton" target="_blank">
-                                <img  src="./img/github.svg" alt="Logo do GitHub">
-                                GitHub
-                            </a>
-                        </li>
-                        <li>
-                            <a href="" id="linkedinButton" target="_blank">
-                                <img  src="./img/linkedin.svg" alt="Logo do LinkedIn">
-                                LinkedIn
-                            </a>
-                        </li>
-                    </ul>
-                </li>
-                <li class="card">
-                    <img src="./img/developer_jhonatan.webp" alt="img">
-                    <h3>Jhonatan Fermino da Silva</h3>
-                    <p>
-                        jhonatanfs2018@gmail.com
-                    </p>
-                    <ul>
-                        <li>
-                            <a href="https://github.com/JhouFermino" id="githubButton" target="_blank">
-                                <img  src="./img/github.svg" alt="Logo do GitHub">
-                                GitHub
-                            </a>
-                        </li>
-                    </ul>
-                </li>
-                <li class="card">
-                    <img src="https://www.shutterstock.com/image-vector/blank-avatar-photo-place-holder-600nw-1095249842.jpg" alt="img">
-                    <h3>Katriel Alves da Silva </h3>
-                    <p>
-                        silvakatriel91@gmail.com
-                    </p>
-                    <ul>
-                        <li>
-                            <a href="https://github.com/katrielEnigma" id="githubButton" target="_blank">
-                                <img  src="./img/github.svg" alt="Logo do GitHub">
-                                GitHub
-                            </a>
-                        </li>
-                    </ul>
-                </li>
-                <li class="card">
-                    <img src="./img/khaue_iamgem.jpeg" alt="img">
-                    <h3>Khaue Ramos</h3>
-                    <p>
-                        khaue070106@edu.unipar.br
-                    </p>
-                    <ul>
-                        <li>
-                            <a href="https://github.com/kkhaue" id="githubButton" target="_blank">
-                                <img  src="./img/github.svg" alt="Logo do GitHub">
-                                GitHub
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://www.linkedin.com/in/khaue/" id="linkedinButton" target="_blank">
-                                <img  src="./img/linkedin.svg" alt="Logo do LinkedIn">
-                                LinkedIn
-                            </a>
-                        </li>
-                    </ul>
-                </li>
-            </ul>
-        </section>
-        <footer>
-            <div>
-                <img src="./img/mundo_verde_logo.png" alt="Logo do Mundo Verde">
+    <!-- INÍCIO DO CÓDIGO DO LIXO ELETRONICO  -->
+    <section class="lixo-eletronico" id="lixo-eletronico">
+        <h2>Lixo Eletrônico</h2>
+        <p>Apresentação de tópicos importantes sobre o assunto</p>
+        <ul class="cards">
+            <li class="card">
+                <h3>Definição</h3>
+                <p>Lixo eletrônico são aparelhos sem uso, como celulares e pilhas, que podem ser reciclados. Em vez de
+                    ir para o lixo comum, seus materiais viram novas matérias-primas, ajudando o meio ambiente.</p>
+            </li>
+            <li class="card">
+                <h3>Falso Perigo</h3>
                 <p>
-                    &copy; Copyright Mundo Verde 2025 - Todos os direitos reservados
+                    Aparelhos eletrônicos fora de uso não oferecem risco. Se eram seguros quando funcionavam, continuam
+                    sendo depois. É totalmente seguro guardar e transportar até o descarte correto.
                 </p>
+            </li>
+            <li class="card">
+                <h3>Resíduo VS Lixo</h3>
+                <p>Chamamos de “lixo eletrônico” tudo o que não usamos mais, como celulares e cabos. Mas, na verdade,
+                    muitos desses itens ainda podem ser reciclados ou reaproveitados. O termo mais correto é resíduo
+                    eletrônico, pois mostra que eles ainda têm valor e podem ajudar o meio ambiente e a economia.</p>
+            </li>
+            <li class="card">
+                <h3>Perigo Real (Desmontagem)</h3>
+                <p>
+                    Não é recomendado desmontar seus aparelhos em casa, pois isso pode ser perigoso e dificultar a
+                    reciclagem. O desmonte deve ser feito por profissionais qualificados. Para baterias de lítio, como
+                    as de celulares, mantenha-as dentro do dispositivo ou embale-as de forma segura antes de descartar.
+                    Equipamentos maiores devem ser entregues inteiros aos pontos de coleta.
+                </p>
+            </li>
+        </ul>
+    </section>
+    <section class="lixo-eletronico dados">
+        <h2>Notícias sobre Lixo Eletrônico</h2>
+        <ul class="cards">
+            <li class="card">
+                <img src="https://assets.brasildefato.com.br/2024/12/image_processing20241220-2385620-ep6qkj.webp"
+                    alt="img">
+                <h3>Brasil é 5º país que mais gera lixo eletrônico, mas só 3% é descartado corretamente</h3>
+                <a target="_blank"
+                    href="https://www.brasildefato.com.br/2024/12/26/brasil-e-5-pais-que-mais-gera-lixo-eletronico-mas-so-3-e-descartado-corretamente-saiba-como-fazer/">Ler
+                    mais</a>
+            </li>
+            <li class="card">
+                <img src="https://s2-g1.glbimg.com/rU-jgvLXffNeoHLvcraLrq0o_CM=/0x0:1700x917/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2022/Q/1/QdBODHTOqSOh7uGQvBdw/lixo-eletronico-pocos-de-caldas.png"
+                    alt="img">
+                <h3>Contaminação por chumbo e mercúrio: veja riscos do descarte inadequado de celulares e eletrônicos
+                </h3>
+                <a target="_blank"
+                    href="https://g1.globo.com/pa/para/noticia/2023/11/30/contaminacao-por-chumbo-e-mercurio-saiba-quais-os-riscos-do-descarte-inadequado-de-celulares-e-eletronicos.ghtml">Ler
+                    mais</a>
+            </li>
+        </ul>
+    </section>
+    <!-- FIM DO CÓDIGO DO LIXO ELETRONICO  -->
+
+    <!-- INÍCIO - IMPACTO AMBIENTAL -->
+    <section class="services impacto-ambiental" id="impacto-ambiental">
+        <h2 class="impacto-title">Impacto Ambiental</h2>
+        <p class="impacto-description">
+            A gente descarta, a Terra paga o preço.
+        </p>
+
+        <ul class="cards impacto-cards">
+
+            <li class="card impacto-card">
+                <h3 class="card-title">Impacto Ambiental</h3>
+                <p class="card-description">
+                    O lixo eletrônico causa muitos problemas para a natureza. Todo ano, o mundo joga fora mais de 50
+                    milhões de toneladas de lixo eletrônico, mas só 20% é reciclado corretamente. Isso faz com que
+                    materiais perigosos, como chumbo, mercúrio e cádmio, acabem poluindo o solo e a água.
+                </p>
+            </li>
+
+            <li class="card impacto-card">
+                <h3 class="card-title">Contaminação do Solo e da Água</h3>
+                <p class="card-description">
+                    Os produtos químicos presentes nos eletrônicos descartados podem infiltrar-se no solo e contaminar
+                    os lençóis freáticos, afetando a qualidade da água potável.
+                </p>
+            </li>
+
+            <li class="card impacto-card">
+                <h3 class="card-title">Emissões de Gases de Efeito Estufa</h3>
+                <p class="card-description">
+                    A produção e o descarte inadequado de eletrônicos contribuem significativamente para as emissões de
+                    gases de efeito estufa, exacerbando as mudanças climáticas.
+                </p>
+            </li>
+
+            <li class="card impacto-card">
+                <h3 class="card-title">Perda de Recursos Naturais</h3>
+                <p class="card-description">
+                    A extração de metais preciosos e outros materiais dos eletrônicos descartados resulta na degradação
+                    dos ecossistemas e na perda de biodiversidade.
+                </p>
+            </li>
+
+            <li class="card impacto-card">
+                <h3 class="card-title">Riscos à Saúde Humana</h3>
+                <p class="card-description">
+                    Quando o lixo eletrônico não é descartado corretamente, substâncias tóxicas podem ser liberadas e
+                    causar problemas respiratórios, neurológicos e até câncer em pessoas expostas.
+                </p>
+            </li>
+
+            <li class="card impacto-card">
+                <h3 class="card-title">Aumento de Lixões e Aterros</h3>
+                <p class="card-description">
+                    O descarte de eletrônicos em locais inapropriados contribui para o crescimento desordenado de
+                    lixões e aterros, dificultando a gestão adequada dos resíduos urbanos.
+                </p>
+            </li>
+        </ul>
+
+        <script>
+            document.addEventListener("DOMContentLoaded", () => {
+                const chartBars = document.querySelectorAll(".chart-bar");
+                const chartContainer = document.querySelector(".chart-container");
+
+                const observer = new IntersectionObserver((entries, observer) => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            chartBars.forEach(bar => {
+                                bar.style.animationPlayState = "running";
+                            });
+                            observer.disconnect(); // Para evitar que a animação seja repetida
+                        }
+                    });
+                }, { threshold: 0.5 }); // Ativa quando 50% do gráfico estiver visível
+
+                observer.observe(chartContainer);
+            });
+        </script>
+
+        <div class="chart-container">
+            <h2 class="chart-title">MAIORES GERADORES DE RESÍDUOS</h2>
+            <div class="chart">
+                <div class="chart-y-axis">
+                    <span>10</span>
+                    <span>8</span>
+                    <span>6</span>
+                    <span>4</span>
+                    <span>2</span>
+                    <span>0</span>
+                </div>
+
+                <div class="chart-bars">
+                    <div class="chart-bar bar1"></div>
+                    <div class="chart-bar bar2"></div>
+                    <div class="chart-bar bar3"></div>
+                    <div class="chart-bar bar4"></div>
+                    <div class="chart-bar bar5"></div>
+                </div>
+                <div class="chart-y-label">TONELADAS</div>
             </div>
-        </footer>
-    </body>
+
+            <div class="chart-labels">
+                <div class="chart-label">EUA</div>
+                <div class="chart-label">CHINA</div>
+                <div class="chart-label">ÍNDIA</div>
+                <div class="chart-label">JAPÃO</div>
+                <div class="chart-label">BRASIL</div>
+            </div>
+            <div class="chart-x-label">PAÍSES</div>
+            <div class="chart-footnote">(The Global E-Waste Monitor, 2020)</div>
+        </div>
+
+
+    </section>
+    <!-- FIM IMPACTO AMBIENTAL -->
+
+    <!-- INÍCIO SOLUÇÕES SUSTENTÁVEIS -->
+    <section class="solucoes-sustentaveis" id="solucoes-sustentaveis">
+        <h2>Soluções Sustentáveis</h2>
+        <p class="solucoes-description">
+            Cuidar do hoje, pensando no amanhã
+        </p>
+
+        <ul class="cards">
+            <li class="card">
+                <h3>Objetivo Principal</h3>
+                <p>
+                    O desafio do lixo eletrônico exige uma abordagem sistêmica, integrando ações de governos, empresas,
+                    instituições de ensino e consumidores. Soluções sustentáveis vão além da reciclagem: elas buscam
+                    reestruturar a forma como produzimos, consumimos e descartamos tecnologia. A seguir, apresentamos um
+                    conjunto de estratégias interligadas para enfrentar esse problema de forma eficaz e duradoura:
+                </p>
+                <ul class="list">
+                    <li>
+                        1 - Design Sustentável e Ecoeficiente
+                    </li>
+                    <li>
+                        2 - Economia Circular
+                    </li>
+                    <li>
+                        3 - Logística Reversa
+                    </li>
+                    <li>
+                        4 - Educação Ambiental e Conscientização
+                    </li>
+                    <li>
+                        5 - Incentivo à Pesquisa e Inovação
+                    </li>
+                </ul>
+            </li>
+            <li class="card image">
+                <img src="./img/lixeira.jpeg" alt="Lixeira verde com eletroeletrônicos dentro">
+            </li>
+            <li class="card">
+                <h3 class="tituloMenor">Design Sustentável e Ecoeficiente</h3>
+                <p>
+                    Produtos modulares, com peças que podem ser trocadas, e o uso de materiais recicláveis ou
+                    biodegradáveis ajudam a reduzir o impacto ambiental. A Fairphone, por exemplo, fabrica celulares
+                    fáceis de consertar, promovendo mais durabilidade.
+                </p>
+                <h3 class="tituloMenor marginTop">Economia Circular</h3>
+                <p>
+                    Na economia circular, o foco é reaproveitar. Em vez de simplesmente descartar, reutiliza-se
+                    aparelhos, recuperam-se metais valiosos e reintegram-se materiais reciclados nas cadeias produtivas.
+                    Isso diminui a extração de recursos e a geração de lixo.
+                </p>
+                <h3 class="tituloMenor marginTop">Logística Reversa</h3>
+                <p>
+                    A logística reversa garante que os produtos usados voltem ao fabricante, que deve dar a eles um
+                    destino adequado. Isso inclui pontos de coleta, programas de troca e campanhas de recolhimento —
+                    medidas já previstas por lei no Brasil.
+                </p>
+            </li>
+            <li class="card">
+                <h3 class="tituloMenor">Educação Ambiental e Conscientização</h3>
+                <p>
+                    Informar consumidores sobre o impacto do consumo e descarte faz toda a diferença. Reparar,
+                    reutilizar e comprar de forma consciente são atitudes que reduzem o lixo eletrônico.
+                </p>
+                <h3 class="tituloMenor marginTop">Incentivo à Pesquisa e Inovação</h3>
+                <p>
+                    Investir em reciclagem eficiente, novos materiais e tecnologias de rastreamento torna todo o
+                    processo mais limpo e inteligente.
+                </p>
+
+            </li>
+        </ul>
+    </section>
+    <!-- FIM SOLUÇÕES SUSTENTÁVEIS -->
+    
+    <button id="backToTop" title="Voltar ao Topo">↑</button>
+
+    <section class="contato" id="contato">
+
+        <h2>Desenvolvedores</h2>
+        <ul class="cards">
+            <li class="card">
+                <img src="https://www.shutterstock.com/image-vector/blank-avatar-photo-place-holder-600nw-1095249842.jpg"
+                    alt="img">
+                <h3>Matheus Reichemback Stang</h3>
+                <p>
+                    matheus.reichemback.stang@gmail.com
+                </p>
+                <ul>
+                    <li>
+                        <a href="" id="githubButton" target="_blank">
+                            <img src="./img/github.svg" alt="Logo do GitHub">
+                            GitHub
+                        </a>
+                    </li>
+                    <li>
+                        <a href="" id="linkedinButton" target="_blank">
+                            <img src="./img/linkedin.svg" alt="Logo do LinkedIn">
+                            LinkedIn
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <li class="card">
+                <img src="./img/developer_jhonatan.webp" alt="img">
+                <h3>Jhonatan Fermino da Silva</h3>
+                <p>
+                    jhonatanfs2018@gmail.com
+                </p>
+                <ul>
+                    <li>
+                        <a href="https://github.com/JhouFermino" id="githubButton" target="_blank">
+                            <img src="./img/github.svg" alt="Logo do GitHub">
+                            GitHub
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <li class="card">
+                <img src="https://www.shutterstock.com/image-vector/blank-avatar-photo-place-holder-600nw-1095249842.jpg"
+                    alt="img">
+                <h3>Katriel Alves da Silva </h3>
+                <p>
+                    silvakatriel91@gmail.com
+                </p>
+                <ul>
+                    <li>
+                        <a href="https://github.com/katrielEnigma" id="githubButton" target="_blank">
+                            <img src="./img/github.svg" alt="Logo do GitHub">
+                            GitHub
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <li class="card">
+                <img src="./img/khaue_iamgem.jpeg" alt="img">
+                <h3>Khaue Ramos</h3>
+                <p>
+                    khaue070106@edu.unipar.br
+                </p>
+                <ul>
+                    <li>
+                        <a href="https://github.com/kkhaue" id="githubButton" target="_blank">
+                            <img src="./img/github.svg" alt="Logo do GitHub">
+                            GitHub
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/in/khaue/" id="linkedinButton" target="_blank">
+                            <img src="./img/linkedin.svg" alt="Logo do LinkedIn">
+                            LinkedIn
+                        </a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </section>
+
+    <script>
+        // Mostrar o botão ao rolar a página
+        const backToTopButton = document.getElementById("backToTop");
+
+        window.addEventListener("scroll", () => {
+            if (window.scrollY > 300) {
+                backToTopButton.style.display = "block";
+            } else {
+                backToTopButton.style.display = "none";
+            }
+        });
+
+        // Voltar ao topo ao clicar no botão
+        backToTopButton.addEventListener("click", () => {
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth"
+            });
+        });
+    </script>
+    
+    
+    
+    
+    
+    <footer>
+        <div>
+            <img src="./img/mundo_verde_logo.png" alt="Logo do Mundo Verde">
+            <p>
+                &copy; Copyright Mundo Verde 2025 - Todos os direitos reservados
+            </p>
+        </div>
+    </footer>
+</body>
+
 </html>
