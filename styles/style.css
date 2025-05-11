@@ -15,34 +15,18 @@
     transition: text-shadow 0.3s ease, color 0.3s ease, transform 0.3s ease;
 }
 
-.green:hover {
-    color: #27ae60;
-    /* Verde mais escuro para o hover */
-    text-shadow: 0 0 2px #27ae60, 0 0 4px #27ae60;
-    transform: translateY(-5px);
-}
 
 .orange {
-    color: #d35400;
+    color: #f39c12;
     transition: text-shadow 0.3s ease, color 0.3s ease, transform 0.3s ease;
 }
 
-.orange:hover {
-    color: #e67e22;
-    text-shadow: 0 0 2px #d35400, 0 0 4px #d35400;
-    transform: translateY(-5px);
-}
 
 .blue {
     color: #3498db;
     transition: text-shadow 0.3s ease, color 0.3s ease, transform 0.3s ease;
 }
 
-.blue:hover {
-    color: #2980b9;
-    text-shadow: 0 0 2px #3498db, 0 0 4px #3498db;
-    transform: translateY(-5px);
-}
 
 html {
     scroll-behavior: smooth;
@@ -1092,8 +1076,21 @@ body {
 /* Responsividade para telas menores */
 @media screen and (max-width: 768px) {
     .container-fluid.text-center {
-        display: none;
-        /* Esconde o elemento em telas menores */
+        padding-top: 70%;
+        padding-left: 25%;
+        width: 150%; /* Garante que o contêiner ocupe toda a largura da tela */
+        overflow-y: hidden;
+    }
+
+    *{
+        overflow-x: hidden; /* Remove o scroll horizontal */
+    }
+
+    #svg-earth {
+        transform: scale(1.9); /* Amplia o elemento para 190% */
+        transform-origin: center; /* Mantém o centro como ponto de origem */
+        width: 150%; /* Garante que o SVG se ajuste ao contêiner */
+        height: auto; /* Mantém a proporção */
     }
 }
 

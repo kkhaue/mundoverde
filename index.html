@@ -9,9 +9,14 @@
     <link rel="stylesheet" href="./styles/style.css">
     <!-- Fontawesome Link for Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link rel="icon" href="img/mundo_verde_logo.ico" type="image/x-icon">
 </head>
 
 <body>
+
+    <script src="scripts/closeDrawer.js"></script>
+    <script src="scripts/showChartBars.js"></script>
+
     <header>
         <nav class="navbar">
             <img src="./img/mundo_verde_logo.png" alt="Logo do Mundo Verde">
@@ -318,27 +323,6 @@
                 </p>
             </li>
         </ul>
-
-        <script>
-            document.addEventListener("DOMContentLoaded", () => {
-                const chartBars = document.querySelectorAll(".chart-bar");
-                const chartContainer = document.querySelector(".chart-container");
-
-                const observer = new IntersectionObserver((entries, observer) => {
-                    entries.forEach(entry => {
-                        if (entry.isIntersecting) {
-                            chartBars.forEach(bar => {
-                                bar.style.animationPlayState = "running";
-                            });
-                            observer.disconnect(); // Para evitar que a animação seja repetida
-                        }
-                    });
-                }, { threshold: 0.5 }); // Ativa quando 50% do gráfico estiver visível
-
-                observer.observe(chartContainer);
-            });
-        </script>
-
         <div class="chart-container">
             <h2 class="chart-title">MAIORES GERADORES DE RESÍDUOS</h2>
             <div class="chart">
@@ -449,7 +433,7 @@
         </ul>
     </section>
     <!-- FIM SOLUÇÕES SUSTENTÁVEIS -->
-    
+
     <button id="backToTop" title="Voltar ao Topo">↑</button>
 
     <section class="contato" id="contato">
@@ -532,7 +516,6 @@
             </li>
         </ul>
     </section>
-
     <script>
         // Mostrar o botão ao rolar a página
         const backToTopButton = document.getElementById("backToTop");
@@ -553,11 +536,6 @@
             });
         });
     </script>
-    
-    
-    
-    
-    
     <footer>
         <div>
             <img src="./img/mundo_verde_logo.png" alt="Logo do Mundo Verde">
